@@ -1,12 +1,11 @@
 #https://www.youtube.com/watch?v=ZDa-Z5JzLYM
 
 class ClassEmpty:
-    
     # You can use pass to stop python throwing errors for empty classes
     pass
-
-class Employee:
     
+class Employee:
+    #Constructor for Employee class
     def __init__(self, firstname,lastname, age):
         #Define attributes for class
         self.firstname = firstname
@@ -20,7 +19,7 @@ class Employee:
 #Don't need to pass the instance "self" as an arg as it's done automatically
 emp_1 = Employee('Jordan', 'McDougall', 25)
 
-emp_2= Employee('Employee', 'Two', 26)
+emp_2 = Employee('Employee', 'Two', 26)
 
 print('Printing Employee Email using class attribute')
 print(emp_1.email)
